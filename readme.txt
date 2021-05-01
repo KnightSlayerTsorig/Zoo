@@ -18,9 +18,9 @@ Program consist of 6 modules:
 
 1.zoo - module where located Zoo class which represent a zoo.
 2.corral - module where located Corral class which represent a corral.
-3.animals - module where located Animal class which represent an animal, also in this module I create a few Animal class
-objects required by the technical task and put them in the list
+3.animals - module where located Animal class which represent an animal, also in this module I create a few Animal
+  class objects required by the technical task and put them in the list
 4.menu_methods - module with a three functions that used in a main.py
 5.main - module where all previous modules are gathered together with purpose to create UI. Program can be activated
-only from this module
+  only from this module
 6.test_menu_functions - module with a some unit-tests for "split" function from menu_functions module
