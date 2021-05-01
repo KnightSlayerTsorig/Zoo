@@ -1,9 +1,9 @@
 class Animal:
-
+    # class that represent the animal
     def __init__(self, kind, species, area):
-        self.kind = kind
-        self.species = species
-        self.area = area
+        self.kind = kind            # type of the animal(herbivore or predator)
+        self.species = species      # kind of the animal
+        self.area = area            # amount of the free space needed by the animal to settle in the corral
 
 
 lion = Animal('predator', "Lion's", 12)
@@ -21,5 +21,6 @@ racoon = Animal('herbivore', "Racoon's", 1)
 rabbit = Animal('herbivore', "Rabbit's", 1)
 
 animal_list = [
+    # list of all existing Animal class objects
     lion, panther, lynx, cheetah, crocodile, bear, horse, deer, roe, monkey, racoon, rabbit
 ]

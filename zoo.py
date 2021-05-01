@@ -2,21 +2,23 @@ from corral import *
 
 
 class Zoo:
-
+    # class that represent zoo
     def __init__(self):
-        self.free_area = 3400
-        self.corrals = {}
-        self.corrals_count = 0
+        self.free_area = 3400       # total area of the zoo (square meters)
+        self.corrals = {}           # list of the corrals that available at the zoo
+        self.corrals_count = 0      # amount of the corrals at the zoo
 
     def __repr__(self):
+        # magic method that represent zoo. In this case it show's all available information about the zoo
         zoo_overview = f'Free area left at zoo: {self.free_area} sq.m.\nTotal corals count: {self.corrals_count}'
         for key, item in self.corrals.items():
             zoo_overview += f'\n{key} corral take {item} sq.m. of total area'
         return zoo_overview
 
     def create_corral(self, area, kind):
+        # method that can create new objects of the Corral class and add them to the zoo
         if self.free_area < area:
-            print(f'There is not enough space, available area for new corral: {self.free_area}\n')
+            print(f'There is not enough space, available area for new corral: {self.free_area} sq.m.\n')
         else:
             self.corrals_count += 1
             self.free_area -= area
