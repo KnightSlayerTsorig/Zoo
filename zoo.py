@@ -12,7 +12,7 @@ class Zoo:
         # magic method that represent zoo. In this case it show's all available information about the zoo
         zoo_overview = f'Free area left at zoo: {self.free_area} sq.m.\nTotal corals count: {self.corrals_count}'
         for key, item in self.corrals.items():
-            zoo_overview += f'\n{key} corral take {item} sq.m. of total area'
+            zoo_overview += f'\n{key} {item} '
         return zoo_overview
 
     def create_corral(self, area, kind):

@@ -10,15 +10,21 @@ def add_animals(a_list, a_to_add_list, corrals):
             herb = corrals[el]
         if corrals[el].kind == 'predator':
             pred = corrals[el]
-    for i in a_list:
-        for j in a_to_add_list:
-            if j + "'s" == i.species.lower():
-                if i.kind == herb.kind:
-                    herb.add_animal(i.kind, j, i.area, 1)
-                if i.kind == pred.kind:
-                    pred.add_animal(i.kind, j, i.area, 1)
-            else:
-                pass
+    try:
+        for i in a_list:
+            for j in a_to_add_list:
+                if j + "'s" == i.species.lower():
+                    if i.kind == herb.kind:
+                        herb.add_animal(i.kind, j, i.area, 1)
+                    if i.kind == pred.kind:
+                        pred.add_animal(i.kind, j, i.area, 1)
+                else:
+                    pass
+    except UnboundLocalError:
+        print(
+            'Before adding animals to the zoo, you need to create at least two corrals one for herbivores and one for '
+            'predators'
+        )
 
 
 def info():
