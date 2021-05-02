@@ -30,3 +30,4 @@ class Zoo:
                 f'Total corral area: {area} sq.m.\n'
                 f'Animals type: {kind}\n'
             )
+

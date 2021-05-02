@@ -37,3 +37,4 @@ def info():
         '4. Get overall corrals info\n'
         '5. Exit\n'
     )
+
