@@ -12,7 +12,7 @@ With this program user can:
   In this case there will be added: 3 monkeys, 2 lions, 1 lynx, 1 roe, 1 bear. Of course if there is enough space.
 - Get overall info about the zoo or corrals in it
 
-##################################################################################################################
+#################################################################################################################
 
 Program consist of 6 modules:
 
